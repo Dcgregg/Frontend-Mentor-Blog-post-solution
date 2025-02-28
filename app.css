@@ -1,0 +1,125 @@
+/* Add font from folder */
+@font-face {
+    font-family: Figtree-variable;
+    src: url(fonts/Figtree-VariableFont_wght.ttf);
+}
+html {
+    font-family: Figtree-variable, sans-serif;
+    font-size: 1em;
+}
+body {
+    box-sizing: border-box;
+    border: solid 1px rgb(200, 17, 17);
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardWrapper {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 350px;
+    max-height: calc(100vh - 1rem);
+    border-radius: 5%;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: solid 1px hsl(0, 0%, 7%);
+    box-shadow: 10px 10px  rgba(0, 0, 0, 0.768);
+}
+
+.mainImg {
+    width: 95%;
+    height: auto;
+    justify-self: center;
+    margin: 0.5rem 0.6rem;
+    border-radius: 5%;
+
+}
+
+.category {
+    background-color: hsl(47, 88%, 63%);
+    font-weight: 600;
+    font-size: 0.6em;
+    font-weight: 800;
+    max-width: 45px;
+    padding: 0.5rem 0.6rem;
+    margin: 0.5rem 1rem 0.4rem 1rem;
+    border-radius: 5%;
+    color: hsl(0, 0%, 7%);
+}
+
+.published {
+    font-size: 0.7em;
+    letter-spacing: 0.05rem;
+    padding: 0.2rem;
+    margin: 0.2rem 1rem 1rem 1rem;
+    color: hsl(0, 0%, 42%);
+}
+
+h1 {
+    margin: 0.2rem 1rem 0.5rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 0.5rem;
+    line-height: 19px;
+}
+
+h1:hover, h1:active {
+    color: hsl(47, 88%, 63%)
+}
+
+.cardInfo {
+    font-size: 1em;
+    padding: 0.2rem;
+    margin: 0.1rem 1rem 1rem 1rem;
+    color: hsl(0, 0%, 42%);
+}
+
+.authorImg {
+    width: 2rem;
+}
+span {
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem;
+    margin: 1rem;
+}
+span p {
+    align-self: center;
+    margin: 0 0.5rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 7%);
+}
+
+/* Styles from Frontend Mentor */
+.attribution { font-size: 11px; text-align: center; margin-top: 0.5rem; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a:hover {
+    color: hsl(0, 0%, 7%);
+}
+.attribution a:focus {
+    text-decoration: none;
+    color: hsl(0, 0%, 42%);
+}
+
+@media screen and (max-width:376px){
+    .cardWrapper {
+        max-width: 300px;
+        margin: 1.5rem;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:400px){
+    .cardWrapper {
+        max-width: 300px;
+        max-height: 410px;
+    }
+    .published {
+        margin-bottom: 0.3rem;
+    }
+}
